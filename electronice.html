@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://kit.fontawesome.com/c2b1ffa878.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="styles-electronice/main.css">
+    <link rel="stylesheet" href="styles-main/footer.css">
+
+    <title>Flanco</title>
+</head>
+<body>
+    <header id="theheader">
+        <nav class="nav-top">
+            <a href="main.html"><img class="logo" src="pics/flanco.png" alt="."></a>
+            <section class="nav-top-middle">
+              <ul>
+                <li class="casa">
+                  <a href="main.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="electronice.html">
+                    <i class="fa-solid fa-plug"></i>
+                    <span>Electronice</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="magazine.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Magazine</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="cariere.html">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Cariere</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="despre.html">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Despre</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Contact</span>
+                  </a>
+                </li>
+                <li style="position: relative;">
+                  <i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i>
+                  <div class="header-input-container">
+                    <input type="text" placeholder="Cauta...">
+                    <button><i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i></button>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <div>
+              <span class="sandwitch"><i id="barsIcon" class="fa-solid fa-bars" style="font-size: 25px; margin-top:3px; cursor:pointer; transition:.2s;"></i></span>
+            </div>
+        </nav>
+        <nav class="nav-sandwitch">
+          <ul>
+            <li class="casa">
+              <a href="main.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Casa</span>
+              </a>
+            </li>
+            <li>
+              <a href="electronice.html">
+                <i class="fa-solid fa-plug"></i>
+                <span>Electronice</span>
+              </a>
+            </li>
+            <li>
+              <a href="magazine.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Magazine</span>
+              </a>
+            </li>
+            <li>
+              <a href="cariere.html">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>Cariere</span>
+              </a>
+            </li>
+            <li>
+              <a href="despre.html">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Despre</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <div class="blackfriday"></div>
+      <section class="container">
+        <section class="side-menu">
+          <div class="electronice-tip">
+            <p>
+              <input type="checkbox" name="laptops" id="laptops" value="laptops">
+              Laptopuri si accesorii
+            </p>
+            <p>
+              <input type="checkbox" name="phones" id="phones" value="phones">
+              Telefoane mobile & accesorii
+            </p>
+            <p>
+              <input type="checkbox" name="tablets" id="tablets" value="tablets">
+              Tablete & accesorii
+            </p>
+            <p>
+              <input type="checkbox" name="accessories" id="accessories" value="accessories">
+              Wearables & Gadgeturi
+            </p>
+          </div>
+          <details class="brand" open>
+            <summary onclick="toggleArrows(this)">
+              <h3 style="display: flex;">
+                  Brand 
+                  <div style=" margin-left: 5px; margin-top: -3px; height: 30px; width: 30px; display: flex; align-items: center;">
+                      <div class="left-arrow" style="transform: rotate(225deg); margin-right: -2px;"></div>
+                      <div class="right-arrow" style="transform: rotate(135deg); margin-left: -2px;"></div>
+                  </div>
+              </h3>
+            </summary>
+            <p>
+              <input type="checkbox" name="apple" id="apple" value="apple">
+              Apple
+            </p>
+            <p>
+              <input type="checkbox" name="samsung" id="samsung" value="samsung">
+              Samsung
+            </p>
+            <p>
+              <input type="checkbox" name="huawei" id="huawei" value="huawei">
+              Huawei
+            </p>
+            <p>
+              <input type="checkbox" name="google" id="google" value="google">
+              Google
+            </p>
+            <p>
+              <input type="checkbox" name="LG" id="LG" value="LG">
+              LG
+            </p>
+            <p>
+              <input type="checkbox" name="motorola" id="motorola" value="motorola">
+              Motorola
+            </p>
+            <p>
+              <input type="checkbox" name="sony" id="sony" value="sony">
+              Sony
+            </p>
+            <p>
+              <input type="checkbox" name="oneplus" id="oneplus" value="oneplus">
+              OnePlus
+            </p>
+            <p>
+              <input type="checkbox" name="asus" id="asus" value="asus">
+              Asus
+            </p>
+            <p>
+              <input type="checkbox" name="microsoft" id="microsoft" value="microsoft">
+              Microsoft
+            </p>
+            <p>
+              <input type="checkbox" name="acer" id="acer" value="acer">
+              Acer
+            </p>
+            <p>
+              <input type="checkbox" name="razer" id="razer" value="razer">
+              Razer
+            </p>
+            <p>
+              <input type="checkbox" name="MSI" id="MSI" value="MSI">
+              MSI
+            </p>
+            <p>
+              <input type="checkbox" name="hp" id="hp" value="hp">
+              hp
+            </p>
+          </details>
+          <details class="price" open>
+            <summary onclick="toggleArrows(this)">
+              <h3 style="display: flex;">
+                  Pret 
+                  <div style=" margin-left: 5px; margin-top: -3px; height: 30px; width: 30px; display: flex; align-items: center;">
+                      <div class="left-arrow" style="transform: rotate(225deg); margin-right: -2px;"></div>
+                      <div class="right-arrow" style="transform: rotate(135deg); margin-left: -2px;"></div>
+                  </div>
+              </h3>
+            </summary>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-1000" value="price-price">
+              Sub 1,000 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-2000" value="price-price">
+              1,000 lei - 1,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-3000" value="price-price">
+              2,000 lei - 2,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-4000" value="price-price">
+              3,000 lei - 3,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-5000" value="price-price">
+              4,000 lei - 4,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-6000" value="price-price">
+              5,000 lei - 5,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-7000" value="price-price">
+              6,000 lei - 6,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-9999" value="price-price">
+              7,000 lei - 9,999 lei
+            </p>
+            <p>
+              <input type="checkbox" name="price-1000" id="price-10000" value="price-price">
+              Peste 10,000 lei
+            </p>
+          </details>
+        </section>
+        <section class="products">
+          <article>
+            <img src="pics/produse/iphone15-pro-max-natural.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Apple iPhone 15 Pro Max</h3>
+              <p>256GB, 5G, Natural Titanium</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(113 review-uri)</span>
+              </div>
+              <div>
+                <div style="font-size: 12px; text-decoration: line-through; color: black; margin-bottom: -5px;">9999.20 RON</div>
+                <div class="pret">8399,99 RON</div>
+              </div>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/iphone15-pro.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Apple iPhone 15 Pro</h3>
+              <p>5G, 128 GB, Blue Titanium</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(54 review-uri)</span>
+              </div>
+              <p class="pret">6.020,20 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_9e07439d21e460f9570cfe181e6280c2.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Apple iPhone 15</h3>
+              <p>5G, 128 GB, Blue</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(75 review-uri)</span>
+              </div>
+              <p class="pret">4.699,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_78fa41fb325ec89ebd22da83cf38a59e.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Samsung Galaxy S23 Ultra</h3>
+              <p>Dual SIM, 8GB RAM, 256GB, 5G, Phantom Black</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(515 review-uri)</span>
+              </div>
+              <p class="pret">5.099,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_4446e661e26945a8154b5d3c853a4784.webp" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Samsung Galaxy S21 FE</h3>
+              <p>Dual SIM, 6GB RAM, 128GB, 5G, Graphite</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">(122 review-uri)</span>
+              </div>
+              <p class="pret">2.231,21 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_7208cca789590fd182353184ff5d2408.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Samsung Galaxy Z Fold5</h3>
+              <p>2GB RAM, 256GB, 5G, Phantom Black</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(30 review-uri)</span>
+              </div>
+              <p class="pret">7.055,70 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_d3ad0eddf629ab8fa2d8436d6b1f4d51.webp" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Smartwatch Huawei Watch GT3</h3>
+              <p>46mm, Active Edition, Black</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">(500 review-uri)</span>
+              </div>
+              <p class="pret">899,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_db72471845f31c899a5ce4e24cecefa4.webp" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Smartwatch Huawei Watch Ultimate Design</h3>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(2 review-uri)</span>
+              </div>
+              <p class="pret">14.999,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_d660b1c46ceb80961bfd3548ca936f0b.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>Huawei P60 Pro</h3>
+              <p>8GB RAM, 256GB, 4G, Black</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">(25 review-uri)</span>
+              </div>
+              <p class="pret">4.659,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_bdc3ae56e321cd0111124972261d2fdc.avif" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>ASUS TUF Gaming F17 FX706HF</h3>
+              <p style="font-size: 14px;">procesor Intel® Core™ i5-11400H pana la 4.50 GHz, 17.3", Full HD, IPS, 144Hz, 16GB DDR4, 512GB SSD, NVIDIA® GeForce RTX™ 2050 4GB GDDR6 TGP 55W, No OS, Graphite Black</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="review">(3 review-uri)</span>
+              </div>
+              <p class="pret">3.299,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_31281b1181271b44f410265773a3e158.webp" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>ASUS Gaming ROG Strix G15 G513RC</h3>
+              <p style="font-size: 14px;">procesor AMD Ryzen 7 6800H (16M Cache, up to 4.7 GHz), 15.6'', FHD, 8GB DDR5, 1TB SSD, GeForce RTX 3050 4GB, No OS, Eclipse Gray</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(1 review)</span>
+              </div>
+              <p class="pret">5.820,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+          <article>
+            <img src="pics/produse/res_c9e18be0556aa74d3a7ab4813c151581.webp" alt="Eroare incarcand imaginea">
+            <div style="display: flex; flex-direction: column; justify-content: space-around;">
+              <h3>ASUS Zenbook 14 OLED UX3402ZA</h3>
+              <p style="font-size: 14px;">procesor Intel® Core™ i7-1260P pana la 4.70 GHz, 14", 2.8K, OLED, 16GB, 1TB M.2 NVMe™ PCIe® 3.0 SSD, Intel® Iris® Xe Graphics, Windows 11 Home</p>
+              <div class="produs-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="review">(5 review-uri)</span>
+              </div>
+              <p class="pret">5.999,99 RON</p>
+              <button class="cos">Adauga in cos</button>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-top">
+        <div class="newsletter">
+          <div>
+            Vrei să fii la curent cu cele mai noi oferte? <span>Abonează-te</span> la newsletter-ul nostru!
+          </div>
+          <div class="footer-input">
+            <input type="text" placeholder="Email">
+            <button>Aboneaza-te</button>
+          </div>
+        </div>
+        <div class="footer-social-media">
+          <div>Suntem prezenți și în social media:</div>
+          <div class="retele-sociale">
+            <a href="https://www.facebook.com/profile.php?id=100089602864033&paipv=0&eav=AfbOLsJ3FAHaWSylQGERgB9gFoyFglqU65igg7q-sW81KNCg9tuinALJzdX7cMIEW_Q" target="_blank">
+              <button><i class="fa-brands fa-facebook"></i></button>
+            </a>
+            <a href="https://twitter.com/FlancoRo" target="_blank">
+              <button><i class="fa-brands fa-twitter"></i></button>
+            </a>
+            <a href="https://www.instagram.com/flancoro/" target="_blank">
+              <button><i class="fa-brands fa-instagram"></i></button>
+            </a>
+            <a href="https://www.youtube.com/user/MagazineleFlanco" target="_blank">
+              <button><i class="fa-brands fa-youtube"></i></button>
+            </a>
+            <a href="https://www.linkedin.com/company/flanco-retail" target="_blank">
+              <button><i class="fa-brands fa-linkedin"></i></button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="footer-middle">
+        <article class="footer-despre">
+          <div><span>Compania Flanco</span></div>
+          <article href="despre.html">Despre</article>
+          <article href="magazine.html">Magazine</article>
+          <article href="cariere.html">Cariere</article>
+          <article href="contact.html">Contact</article>
+          <article>Black Friday</article>
+        </article>
+        <article>
+          <div><span>Contact</span></div>
+          <div>Orange: 021 9344</div>
+          <div>Orange: 037 447 71 00</div>
+          <div>E-mail: suport@flanco.ro</div>
+          <div>Program: luni - vineri 08:00 - 20:00 sambata 09:00 - 18:00 duminica inchis</div>
+        </article>
+      </section>
+      <section class="footer-bottom">
+        &copy; Flanco Comanesti 2023
+      </section>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var barsIcon = document.getElementById('barsIcon');
+          var navSandwich = document.querySelector('.nav-sandwitch');
+          barsIcon.addEventListener('click', function () {
+            navSandwich.style.display = navSandwich.style.display === 'block' ? 'none' : 'block';
+          });
+          window.addEventListener('resize', function () {
+            if (window.innerWidth > 640) {
+              navSandwich.style.display = 'none';
+            }
+          });
+        });
+        document.querySelectorAll('.reducere-scroll').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetElement = document.querySelector(this.getAttribute('href'));
+          const offset = 100;
+          window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: 'smooth'
+          });
+        });
+      });
+      function toggleArrows(detailsElement) {
+        const leftArrow = detailsElement.querySelector('.left-arrow');
+        const rightArrow = detailsElement.querySelector('.right-arrow');
+        const currentTransform = leftArrow.style.transform;
+        leftArrow.style.transform = rightArrow.style.transform;
+        rightArrow.style.transform = currentTransform;
+      }
+      document.addEventListener('DOMContentLoaded', function () {
+        var magnifyingGlass = document.querySelector('.fa-magnifying-glass');
+        var inputContainer = document.querySelector('.header-input-container');
+        magnifyingGlass.addEventListener('click', function () {
+          inputContainer.style.display = inputContainer.style.display === 'flex' ? 'none' : 'flex';
+        });
+      });
+      </script>
+</body>
+</html>

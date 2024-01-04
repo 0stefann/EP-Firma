@@ -1,0 +1,13 @@
+.cariera-img {
+    max-width: 800px;
+}
+.cariera-img2 {
+    max-width: 320px;
+    max-height: 320px;
+}
+@media (max-width: 800px) {
+    .flex-img2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}

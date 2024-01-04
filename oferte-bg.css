@@ -1,0 +1,71 @@
+body {
+    background-color: #ededf0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.oferte-container {
+    margin-top: 10px;
+    height: 350px;
+    display: flex;
+}
+.oferte-container article {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.oferte-container article img {
+    height: 200px;
+    margin: 10px;
+}
+.produs-titlu {
+    color: black;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.produs-specs {
+    text-align: center;
+}
+.produs-specs,
+.produs-rating {
+    margin-bottom: 5px;
+}
+.checked {
+    color: orange;
+}
+.produs-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.produs-footer div {
+    margin-left: 7px;
+    font-size: 16px;
+    color: red;
+    font-weight: 500;
+}
+.produs-footer button {
+    margin-right: 7px;
+    font-size: 20px;
+    background-color: red;
+    padding: 8px 17px 8px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    height: 14px;
+    min-width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(175, 175, 175);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(94, 94, 94);
+    border-radius: 50px;
+}

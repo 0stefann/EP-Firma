@@ -1,0 +1,111 @@
+footer {
+    margin-top: 7px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding-top: 70px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.footer-input {
+    margin-top: 10px;
+    border: 3px solid red;
+    border-radius: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+footer input {
+    color: white;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16.5px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 64%;
+}
+.footer-input button {
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 12.9px;
+    cursor: pointer;
+}
+.newsletter span {
+    font-weight: bold;
+}
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.retele-sociale button {
+    font-size: 19px;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: rgb(180, 180, 180);
+    border: none;
+    padding: 10px;
+    margin-bottom: 55px;
+    cursor: pointer;
+}
+footer hr {
+    border-color: rgba(0, 0, 0, 0.548);
+}
+.footer-middle {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.footer-middle article {
+    width: 200px;
+}
+.footer-middle article div {
+    margin-bottom: 5px;
+}
+.footer-middle span {
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgb(32, 32, 32);
+    padding: 50px;
+}
+a {
+    text-decoration: none;
+}
+.footer-despre article {
+    cursor: pointer;
+}
+.footer-despre article:hover {
+    text-decoration: underline;
+}
+@media (max-width: 800px) {
+    .footer-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 13.5px;
+        text-align: center;
+    }
+    .footer-input {
+        width: 380px;
+    }
+    .footer-input button {
+        padding: 10px;
+    }
+}

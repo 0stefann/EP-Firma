@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    details {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    details summary::-webkit-details-marker,
+    details summary {
+      list-style-type: none;
+      display: list-item;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      background-color: black;
+      width: 15px;
+      height: 2px;
+      transition: .2s;
+    }
+  </style>
+  <title>Details Arrow Position</title>
+</head>
+<body>
+  <details class="brand" open>
+    <summary onclick="toggleArrows(this)">
+        <h3 style="display: flex;">
+            Brand 
+            <div style=" margin-left: 5px; margin-top: -3px; height: 30px; width: 30px; display: flex; align-items: center;">
+                <div class="left-arrow" style="transform: rotate(225deg); margin-right: -2px;"></div>
+                <div class="right-arrow" style="transform: rotate(135deg); margin-left: -2px;"></div>
+            </div>
+        </h3>
+    </summary>
+    <p>
+      <input type="checkbox" name="apple" id="apple" value="apple">
+      Apple
+    </p>
+  </details>
+  <details class="pret" open>
+    <summary onclick="toggleArrows(this)">
+        <h3 style="display: flex;">
+            Pret 
+            <div style=" margin-left: 5px; margin-top: -3px; height: 30px; width: 30px; display: flex; align-items: center;">
+                <div class="left-arrow" style="transform: rotate(225deg); margin-right: -2px;"></div>
+                <div class="right-arrow" style="transform: rotate(135deg); margin-left: -2px;"></div>
+            </div>
+        </h3>
+    </summary>
+    <p>
+      <input type="checkbox" name="1000" id="1000" value="1000">
+      1000lei
+    </p>
+  </details>
+
+  <script>
+    function toggleArrows(detailsElement) {
+      const leftArrow = detailsElement.querySelector('.left-arrow');
+      const rightArrow = detailsElement.querySelector('.right-arrow');
+      const currentTransform = leftArrow.style.transform;
+      leftArrow.style.transform = rightArrow.style.transform;
+      rightArrow.style.transform = currentTransform;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+header {
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    z-index: 1000;
+    background-color: rgba(22, 22, 23, .8);
+    backdrop-filter: saturate(180%) blur(10px);
+    font-size: 14px;
+    font-weight: 300;
+    top: 0;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.nav-top-middle {
+    width: 600px;
+}
+
+.nav-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-top li {
+    height: 100%;
+}
+
+.nav-top a,
+.nav-sandwitch a {
+    text-decoration: none;
+}
+
+[class^="fa-solid fa-house"],
+[class^="fa-solid fa-house"] + span,
+[class^="fa-solid fa-plug"],
+[class^="fa-solid fa-plug"] + span,
+[class^="fa-solid fa-cart-shopping"],
+[class^="fa-solid fa-cart-shopping"] + span,
+[class^="fa-solid fa-user-doctor"],
+[class^="fa-solid fa-user-doctor"] + span,
+[class^="fa-solid fa-phone"],
+[class^="fa-solid fa-phone"] + span,
+[class^="fa-solid fa-circle-info"],
+[class^="fa-solid fa-circle-info"] + span,
+[class^="fa-solid fa-bars"],
+[class^="fa-solid fa-magnifying-glass"] {
+  color: rgb(225, 225, 225);
+  transition:.2s;
+}
+[class^="fa-solid fa-house"]:hover,
+[class^="fa-solid fa-house"]:hover + span,
+a:hover [class^="fa-solid fa-house"],
+a:hover [class^="fa-solid fa-house"] + span,
+[class^="ffa-solid fa-circle-info"]:hover,
+[class^="fa-solid fa-plug"]:hover + span,
+a:hover [class^="fa-solid fa-plug"],
+a:hover [class^="fa-solid fa-plug"] + span,
+[class^="ffa-solid fa-cart-shopping"]:hover,
+[class^="fa-solid fa-cart-shopping"]:hover + span,
+a:hover [class^="fa-solid fa-cart-shopping"],
+a:hover [class^="fa-solid fa-cart-shopping"] + span,
+[class^="fa-solid fa-user-doctor"]:hover,
+[class^="fa-solid fa-user-doctor"]:hover + span,
+a:hover [class^="fa-solid fa-user-doctor"],
+a:hover [class^="fa-solid fa-user-doctor"] + span,
+[class^="ffa-solid fa-phone"]:hover,
+[class^="fa-solid fa-phone"]:hover + span,
+a:hover [class^="fa-solid fa-phone"],
+a:hover [class^="fa-solid fa-phone"] + span,
+[class^="fa-solid fa-circle-info"]:hover,
+[class^="fa-solid fa-circle-info"]:hover + span,
+a:hover [class^="fa-solid fa-circle-info"],
+a:hover [class^="fa-solid fa-circle-info"] + span,
+[class^="fa-solid fa-bars"]:hover,
+[class^="fa-solid fa-magnifying-glass"]:hover {
+  color: white;
+}
+
+.logo {
+    height: 30px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.logo:hover {
+    filter: brightness(0) invert(1);
+}
+
+.nav-sandwitch {
+    position: absolute;
+    top: 3.85rem;
+    right: 1.7rem;
+    background-color: #f0f8ff2f;
+    padding: 10px;
+    border-radius: 20px 0 20px 20px;
+    display: none;
+    backdrop-filter: saturate(180%) blur(10px);
+    background-color: hsla(203, 80%, 2%, 0.479);
+}
+
+.nav-sandwitch ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-sandwitch li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sandwitch {
+    display: none;
+}
+
+.header-input-container {
+    position: absolute;
+    display: flex;
+    top:35px;
+    left: -124px;
+    border-radius: 50px;
+    border: 3px solid red;
+    background-color: rgb(46, 46, 46);
+    width: 260px;
+    justify-content: space-between;
+    display: none;
+}
+.nav-top input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.nav-top input::placeholder {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-top button {
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .header-input-container {
+        left: calc(-410px + 400 * ((100vw - 300px) / 1000));
+    }
+}
+@media (max-width: 640px) {
+    .nav-top ul {
+        display: none;
+    }
+    .nav-top {
+        justify-content: space-between;
+    }
+    [class^="fa-solid fa-bars"] {
+        margin-right: 20px;
+    }
+    .hireme {
+        display: none;
+    }
+    .sandwitch {
+        display: block;
+    }
+}
