@@ -31,7 +31,7 @@
 }
 @media (max-width: 550px) {
     .swiper {
-        width: 430px;
+        width: 340px;
         height: 305px;
     }
     .back, .next {
