@@ -3,21 +3,15 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-.oferte-container {
-    margin-top: 10px;
-    height: 350px;
-    display: flex;
-}
-.oferte-container article {
+.container {
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
     background-color: white;
     border-radius: 20px;
 }
-.oferte-container article img {
+.container img {
     height: 200px;
     margin: 10px;
 }
@@ -68,4 +62,50 @@ body {
 ::-webkit-scrollbar-thumb {
     background: rgb(94, 94, 94);
     border-radius: 50px;
+}
+.swiper {
+    width: 800px;
+    height: 350px;
+}
+.back, .next {
+    font-size: 50px;
+    border: 0;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:  710px) {
+    .container {
+        width: 220px;
+    }
+    .container img {
+        height: 160px;
+    }
+    .swiper {
+        width: 483px;
+        height: 305px;
+    }
+    .back, .next {
+        display: none;
+    }
+}
+@media (min-width: 711px) and (max-width: 886px) {
+    .container {
+        width: 220px;
+    }
+    .container img {
+        height: 160px;
+    }
+    .swiper {
+        width: 710px;
+        height: 305px;
+    }
+    .back, .next {
+        display: none;
+    }
+}
+@media (min-width: 1401px) {
+    .swiper {
+        width: 1060px;
+        height: 345px;
+    }
 }
