@@ -206,28 +206,32 @@
     </div>
   </section>
   <script>
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      spaceBetween: -30,
-      navigation: {
-        nextEl: '.next',
-        prevEl: '.back',
+    function initSwiper() {
+        const swiper = new Swiper('.swiper', {
+          slidesPerView: 3,
+          spaceBetween: -30,
+          navigation: {
+            nextEl: '.next',
+            prevEl: '.back',
+          }
+        });
+        function updateSwiper() {
+          const browserWidth = window.innerWidth || document.documentElement.clientWidth;  
+            if (browserWidth < 710) {
+              swiper.params.slidesPerView = 2;
+            } else if (browserWidth > 710 && browserWidth <= 1400) {
+              swiper.params.slidesPerView = 3;
+            } else {
+              swiper.params.slidesPerView = 4;
+            } 
+            swiper.update();
+            swiper.updateSize();
+        }
+        window.addEventListener('resize', updateSwiper);
+        updateSwiper()
       }
-    });
-    window.addEventListener('resize', function () {
-        const browserWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (browserWidth < 710) {
-          swiper.params.slidesPerView = 2;
-          swiper.update();
-        }
-        else if (browserWidth > 710 && browserWidth <= 1400) {
-          swiper.params.slidesPerView = 3;
-          swiper.update();
-        }
-        else {
-          swiper.params.slidesPerView = 4;
-          swiper.update();
-        }
+      document.addEventListener('DOMContentLoaded', function () {
+        initSwiper();
       });
   </script>
 </body>
