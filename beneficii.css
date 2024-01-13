@@ -9,3 +9,65 @@
     background: rgb(94, 94, 94);
     border-radius: 50px;
 }
+.swiper {
+    width: 805px;
+    height: 305px;
+}
+.back, .next {
+    font-size: 50px;
+    border: 0;
+    color: black;
+    cursor: pointer;
+}
+.beneficii-container button {
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border: white solid 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media (max-width: 550px) {
+    .swiper {
+        width: 430px;
+        height: 305px;
+    }
+    .back, .next {
+        display: none;
+    }
+}
+@media (min-width: 551px) and (max-width: 631px) {
+    .swiper {
+        width: 545px;
+        height: 305px;
+    }
+    .back, .next {
+        display: none;
+    }
+}
+@media (min-width: 632px) and (max-width: 807px) {
+    .swiper {
+        width: 545px;
+        height: 305px;
+    }
+    .back, .next {
+        display: block;
+    }
+}
+@media (min-width: 808px) and (max-width: 886px) {
+    .swiper {
+        width: 805px;
+        height: 305px;
+    }
+    .back, .next {
+        display: none;
+    }
+}
+@media (min-width: 1401px) {
+    .swiper {
+        width: 1060px;
+        height: 305px;
+    }
+}
