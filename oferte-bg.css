@@ -73,7 +73,7 @@ body {
     color: black;
     cursor: pointer;
 }
-@media (max-width:  710px) {
+@media (max-width: 600px) {
     .container {
         width: 220px;
     }
@@ -81,7 +81,22 @@ body {
         height: 160px;
     }
     .swiper {
-        width: 483px;
+        width: 340px;
+        height: 305px;
+    }
+    .back, .next {
+        display: none;
+    }
+}
+@media (min-width: 601px) and (max-width: 710px) {
+    .container {
+        width: 220px;
+    }
+    .container img {
+        height: 160px;
+    }
+    .swiper {
+        width: 480px;
         height: 305px;
     }
     .back, .next {
