@@ -195,8 +195,12 @@
         });
         function updateSwiper() {
           const browserWidth = window.innerWidth || document.documentElement.clientWidth;  
-            if (browserWidth < 710) {
+            if (browserWidth <= 600) {
+              swiper.params.slidesPerView = 1;
+              swiper.params.spaceBetween = -110;
+            } else if (browserWidth > 600 && browserWidth <= 710) {
               swiper.params.slidesPerView = 2;
+              swiper.params.spaceBetween = -30;
             } else if (browserWidth > 710 && browserWidth <= 1400) {
               swiper.params.slidesPerView = 3;
             } else {
